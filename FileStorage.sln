@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorageAPI", "FileStorageAPI\FileStorageAPI.csproj", "{424F8D97-039B-4DBE-B5FA-9BBA7C6D8B1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{1DF6762F-3BD9-4E7B-A7BF-2C4739AE357A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{424F8D97-039B-4DBE-B5FA-9BBA7C6D8B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{424F8D97-039B-4DBE-B5FA-9BBA7C6D8B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{424F8D97-039B-4DBE-B5FA-9BBA7C6D8B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{424F8D97-039B-4DBE-B5FA-9BBA7C6D8B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DF6762F-3BD9-4E7B-A7BF-2C4739AE357A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF6762F-3BD9-4E7B-A7BF-2C4739AE357A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF6762F-3BD9-4E7B-A7BF-2C4739AE357A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF6762F-3BD9-4E7B-A7BF-2C4739AE357A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7FFE80F-96B8-4CBD-AC52-B2205C2A0592}
+	EndGlobalSection
+EndGlobal
