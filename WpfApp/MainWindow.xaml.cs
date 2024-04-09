@@ -18,13 +18,10 @@ namespace WpfApp
     {
         private string _imgPath;
         private List<ImageTextData> _uploadedImages = new List<ImageTextData>();
-        private StackPanel _imagesPanel;
 
         public MainWindow()
         {
             InitializeComponent();
-            _imagesPanel = new StackPanel(); // Инициализируем ImagesPanel
-            _imagesPanel.Orientation = Orientation.Horizontal; // Устанавливаем ориентацию панели
         }
 
         private void OpenImageButton_Click(object sender, RoutedEventArgs e)
@@ -98,21 +95,66 @@ namespace WpfApp
                 _uploadedImages = await GetImagesFromWebApiAsync();
 
                 // Очистить панель для отображения изображений
-                _imagesPanel.Children.Clear();
+                ImagesPanel.Children.Clear();
+
+                // Создать панель для отображения текста и изображений
+                var mainPanel = new Grid
+                {
+                    Margin = new Thickness(10), // Добавить отступы для всей панели
+                    ColumnDefinitions =
+                    {
+                        new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) },
+                        new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
+                    }
+                };
+
+                // Создать заголовки "Images" и "Text"
+                var imageHeader = new TextBlock { Text = "Images", FontWeight = FontWeights.Bold, Margin = new Thickness(0, 0, 0, 10) };
+                var textHeader = new TextBlock { Text = "Text", FontWeight = FontWeights.Bold, Margin = new Thickness(10, 0, 0, 10) };
+                Grid.SetColumn(imageHeader, 0);
+                Grid.SetColumn(textHeader, 1);
+                mainPanel.Children.Add(imageHeader);
+                mainPanel.Children.Add(textHeader);
+
+                // Создать вертикальный StackPanel для отображения текста и изображений
+                var textImagePanel = new StackPanel { Orientation = Orientation.Vertical };
 
                 // Отобразить ранее загруженные изображения
                 foreach (var imageData in _uploadedImages)
                 {
-                    // Создать новое изображение и добавить его в панель
+                    // Создать новый элемент со стеком текста и изображения
+                    var stackPanel = new StackPanel { Orientation = Orientation.Horizontal, Margin = new Thickness(0, 10, 0, 10) };
+
+                    // Добавить текст
+                    var textPanel = new StackPanel { Orientation = Orientation.Vertical };
+                    var textBlock = new TextBlock { Text = imageData.Text, TextWrapping = TextWrapping.Wrap, MaxWidth = 300 };
+                    textPanel.Children.Add(textBlock);
+                    stackPanel.Children.Add(textPanel);
+
+                    // Добавить изображение
                     var image = new Image
                     {
                         Source = await ConvertByteArrayToBitmapImage(imageData.Image),
                         Height = 100,
-                        Margin = new Thickness(10)
+                        Width = 100,
+                        Stretch = System.Windows.Media.Stretch.Uniform,
+                        Margin = new Thickness(20, 0, 0, 0) // Обновленные отступы для изображения
                     };
-                    image.Stretch = System.Windows.Media.Stretch.Uniform;
-                    _imagesPanel.Children.Add(image);
+                    stackPanel.Children.Add(image);
+
+                    // Добавить элемент в вертикальный StackPanel
+                    textImagePanel.Children.Add(stackPanel);
                 }
+
+
+                // Добавить вертикальный StackPanel в Grid
+                Grid.SetColumn(textImagePanel, 0);
+                Grid.SetColumn(imageHeader, 0);
+                Grid.SetColumn(textHeader, 1);
+                mainPanel.Children.Add(textImagePanel);
+
+                // Добавить mainPanel в ImagesPanel
+                ImagesPanel.Children.Add(mainPanel);
             }
             catch (Exception ex)
             {
