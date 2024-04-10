@@ -109,7 +109,7 @@ namespace WpfApp
                 };
 
                 // Создать заголовки "Images" и "Text"
-                var imageHeader = new TextBlock { Text = "Images", FontWeight = FontWeights.Bold, Margin = new Thickness(0, 0, 0, 10) };
+                var imageHeader = new TextBlock { Text = "Images", FontWeight = FontWeights.Bold, Margin = new Thickness(10, 0, 0, 10) };
                 var textHeader = new TextBlock { Text = "Text", FontWeight = FontWeights.Bold, Margin = new Thickness(10, 0, 0, 10) };
                 Grid.SetColumn(imageHeader, 0);
                 Grid.SetColumn(textHeader, 1);
@@ -149,8 +149,8 @@ namespace WpfApp
 
                 // Добавить вертикальный StackPanel в Grid
                 Grid.SetColumn(textImagePanel, 0);
-                Grid.SetColumn(imageHeader, 0);
-                Grid.SetColumn(textHeader, 1);
+                Grid.SetColumn(textHeader, 0);
+                Grid.SetColumn(imageHeader, 1);
                 mainPanel.Children.Add(textImagePanel);
 
                 // Добавить mainPanel в ImagesPanel
