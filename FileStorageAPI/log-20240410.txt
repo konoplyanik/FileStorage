@@ -1,0 +1,61 @@
+2024-04-10 23:51:28.085 +03:00 [INF] Now listening on: https://localhost:7048
+2024-04-10 23:51:28.119 +03:00 [INF] Now listening on: http://localhost:5295
+2024-04-10 23:51:28.124 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-10 23:51:28.127 +03:00 [INF] Hosting environment: Development
+2024-04-10 23:51:28.129 +03:00 [INF] Content root path: D:\Projects\VacancyTestProjects\1 WpfFileStorage\FileStorageServer\FileStorageAPI
+2024-04-10 23:51:28.960 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/swagger/index.html - null null
+2024-04-10 23:51:29.195 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/swagger/index.html - 200 null text/html;charset=utf-8 239.7201ms
+2024-04-10 23:51:29.223 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-10 23:51:29.234 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 10.9491ms
+2024-04-10 23:51:29.262 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-04-10 23:51:29.362 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.9272ms
+2024-04-10 23:51:29.453 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/swagger/v1/swagger.json - null null
+2024-04-10 23:51:29.534 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.881ms
+2024-04-10 23:52:23.573 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7048/ImageText/save-image - application/json; charset=utf-8 93713
+2024-04-10 23:52:23.582 +03:00 [INF] Executing endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-10 23:52:23.638 +03:00 [INF] Route matched with {action = "UploadImageText", controller = "ImageText"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UploadImageText(FileStorageAPI.Model.ImageData) on controller FileStorageAPI.Controllers.ImageTextController (FileStorageAPI).
+2024-04-10 23:52:23.718 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI) in 73.7597ms
+2024-04-10 23:52:23.753 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-10 23:52:23.846 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'FileStorage.App.Services.IFileService' while attempting to activate 'FileStorageAPI.Controllers.ImageTextController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-10 23:52:23.886 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7048/ImageText/save-image - 500 null text/plain; charset=utf-8 312.887ms
+2024-04-10 23:52:23.894 +03:00 [INF] Connection id "0HN2PJVV76FKI", Request id "0HN2PJVV76FKI:00000001": the application completed without reading the entire request body.
+2024-04-10 23:53:46.351 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7048/ImageText/save-image - application/json; charset=utf-8 93713
+2024-04-10 23:53:46.357 +03:00 [INF] Executing endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-10 23:53:46.359 +03:00 [INF] Route matched with {action = "UploadImageText", controller = "ImageText"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UploadImageText(FileStorageAPI.Model.ImageData) on controller FileStorageAPI.Controllers.ImageTextController (FileStorageAPI).
+2024-04-10 23:53:46.425 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI) in 63.4495ms
+2024-04-10 23:53:46.463 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-10 23:53:46.542 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'FileStorage.App.Services.IFileService' while attempting to activate 'FileStorageAPI.Controllers.ImageTextController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-10 23:53:46.547 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7048/ImageText/save-image - 500 null text/plain; charset=utf-8 196.5112ms
+2024-04-10 23:53:46.551 +03:00 [INF] Connection id "0HN2PJVV76FKJ", Request id "0HN2PJVV76FKJ:00000001": the application completed without reading the entire request body.
