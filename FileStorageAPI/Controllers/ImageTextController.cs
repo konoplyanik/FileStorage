@@ -1,6 +1,8 @@
-﻿using FileStorageAPI.Model;
+﻿using AutoMapper;
+using FileStorage.App.Dto.UploadImage;
+using FileStorage.App.Services;
+using FileStorageAPI.Model;
 using Microsoft.AspNetCore.Mvc;
-using System.Text.Json;
 
 namespace FileStorageAPI.Controllers;
 
@@ -9,38 +11,34 @@ namespace FileStorageAPI.Controllers;
 public class ImageTextController : ControllerBase
 {
     private readonly IWebHostEnvironment _hostEnvironment;
+    private readonly IFileService _fileService;
+    private readonly IMapper _mapper;
 
-    public ImageTextController(IWebHostEnvironment hostEnvironment)
+    public ImageTextController(IWebHostEnvironment hostEnvironment, IFileService fileService, IMapper mapper)
     {
         _hostEnvironment = hostEnvironment;
+        _fileService = fileService;
+        _mapper = mapper;
     }
 
     [HttpPost]
     [Route("save-image")]
-    public IActionResult SaveImageText([FromBody] ImageTextData imageTextData)
+    public IActionResult UploadImageText([FromBody] ImageData imageData)
     {
-        var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data", "Images", $"{imageTextData.Text}.json");
-        Directory.CreateDirectory(Path.GetDirectoryName(filePath));
-        var json = JsonSerializer.Serialize(imageTextData);
-        System.IO.File.WriteAllText(filePath, json);
+        var imageDto = _mapper.Map<UploadImageDto>(imageData);
+
+        _fileService.UploadImage(imageDto);
+
         return Ok();
     }
 
     [HttpGet]
     [Route("get-images")]
-    public IActionResult GetImageTexts()
+    public IActionResult GetImageText()
     {
-        var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "App_Data", "Images");
-        var files = Directory.GetFiles(filePath, "*.json");
+        var imagesData = _fileService.GetImages();
+        var result = _mapper.Map<IEnumerable<ImageData>>(imagesData);
 
-        var imageTexts = new List<ImageTextData>();
-        foreach (var file in files)
-        {
-            var json = System.IO.File.ReadAllText(file);
-            var imageText = JsonSerializer.Deserialize<ImageTextData>(json);
-            imageTexts.Add(imageText);
-        }
-
-        return Ok(imageTexts);
+        return Ok(result);
     }
 }

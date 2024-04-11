@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorageAPI", "FileStorageAPI\FileStorageAPI.csproj", "{424F8D97-039B-4DBE-B5FA-9BBA7C6D8B1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileStorageAPI", "FileStorageAPI\FileStorageAPI.csproj", "{424F8D97-039B-4DBE-B5FA-9BBA7C6D8B1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{1DF6762F-3BD9-4E7B-A7BF-2C4739AE357A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileStorage.Repository", "FileStorage.Repository\FileStorage.Repository.csproj", "{9B1E2ECF-85D7-45D3-9083-AFF0CCCF8656}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileStorage.App", "FileStorage.App\FileStorage.App.csproj", "{30E92860-787B-4D9D-BFA4-7C701C10DB33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,14 @@ Global
 		{424F8D97-039B-4DBE-B5FA-9BBA7C6D8B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{424F8D97-039B-4DBE-B5FA-9BBA7C6D8B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{424F8D97-039B-4DBE-B5FA-9BBA7C6D8B1E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1DF6762F-3BD9-4E7B-A7BF-2C4739AE357A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DF6762F-3BD9-4E7B-A7BF-2C4739AE357A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DF6762F-3BD9-4E7B-A7BF-2C4739AE357A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DF6762F-3BD9-4E7B-A7BF-2C4739AE357A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B1E2ECF-85D7-45D3-9083-AFF0CCCF8656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1E2ECF-85D7-45D3-9083-AFF0CCCF8656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1E2ECF-85D7-45D3-9083-AFF0CCCF8656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1E2ECF-85D7-45D3-9083-AFF0CCCF8656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E92860-787B-4D9D-BFA4-7C701C10DB33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E92860-787B-4D9D-BFA4-7C701C10DB33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E92860-787B-4D9D-BFA4-7C701C10DB33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E92860-787B-4D9D-BFA4-7C701C10DB33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
