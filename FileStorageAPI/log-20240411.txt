@@ -571,3 +571,86 @@ System.ArgumentException: The value cannot be an empty string. (Parameter 'path'
 2024-04-11 12:58:17.204 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI) in 11690.6195ms
 2024-04-11 12:58:17.206 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI)'
 2024-04-11 12:58:17.207 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7048/ImageText/get-images - 200 null application/json; charset=utf-8 11703.6472ms
+2024-04-11 17:08:46.932 +03:00 [INF] Now listening on: https://localhost:7048
+2024-04-11 17:08:46.970 +03:00 [INF] Now listening on: http://localhost:5295
+2024-04-11 17:08:46.976 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-11 17:08:46.978 +03:00 [INF] Hosting environment: Development
+2024-04-11 17:08:46.981 +03:00 [INF] Content root path: D:\Projects\VacancyTestProjects\1 WpfFileStorage\FileStorageServer\FileStorageAPI
+2024-04-11 17:08:47.878 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/swagger/index.html - null null
+2024-04-11 17:08:48.182 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/swagger/index.html - 200 null text/html;charset=utf-8 311.6661ms
+2024-04-11 17:08:48.258 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-11 17:08:48.276 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-04-11 17:08:48.276 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 18.974ms
+2024-04-11 17:08:48.474 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 197.8598ms
+2024-04-11 17:08:49.232 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/swagger/v1/swagger.json - null null
+2024-04-11 17:08:49.324 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 93.1843ms
+2024-04-11 17:09:13.296 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7048/ImageText/save-image - application/json; charset=utf-8 93713
+2024-04-11 17:09:13.304 +03:00 [INF] Executing endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-11 17:09:13.322 +03:00 [INF] Route matched with {action = "UploadImageText", controller = "ImageText"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UploadImageText(FileStorageAPI.Model.ImageData) on controller FileStorageAPI.Controllers.ImageTextController (FileStorageAPI).
+2024-04-11 17:09:13.463 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-04-11 17:09:13.468 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI) in 141.0881ms
+2024-04-11 17:09:13.470 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-11 17:09:13.472 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7048/ImageText/save-image - 200 0 null 176.5586ms
+2024-04-11 17:09:19.837 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7048/ImageText/save-image - application/json; charset=utf-8 93713
+2024-04-11 17:09:19.841 +03:00 [INF] Executing endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-11 17:09:19.843 +03:00 [INF] Route matched with {action = "UploadImageText", controller = "ImageText"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UploadImageText(FileStorageAPI.Model.ImageData) on controller FileStorageAPI.Controllers.ImageTextController (FileStorageAPI).
+2024-04-11 17:09:19.878 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-04-11 17:09:19.879 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI) in 34.5512ms
+2024-04-11 17:09:19.881 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-11 17:09:19.882 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7048/ImageText/save-image - 200 0 null 45.2653ms
+2024-04-11 17:09:25.316 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7048/ImageText/save-image - application/json; charset=utf-8 93713
+2024-04-11 17:09:25.319 +03:00 [INF] Executing endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-11 17:09:25.320 +03:00 [INF] Route matched with {action = "UploadImageText", controller = "ImageText"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UploadImageText(FileStorageAPI.Model.ImageData) on controller FileStorageAPI.Controllers.ImageTextController (FileStorageAPI).
+2024-04-11 17:09:25.352 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-04-11 17:09:25.354 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI) in 30.7221ms
+2024-04-11 17:09:25.355 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-11 17:09:25.357 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7048/ImageText/save-image - 200 0 null 41.0321ms
+2024-04-11 17:09:31.273 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7048/ImageText/save-image - application/json; charset=utf-8 93713
+2024-04-11 17:09:31.276 +03:00 [INF] Executing endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-11 17:09:31.278 +03:00 [INF] Route matched with {action = "UploadImageText", controller = "ImageText"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UploadImageText(FileStorageAPI.Model.ImageData) on controller FileStorageAPI.Controllers.ImageTextController (FileStorageAPI).
+2024-04-11 17:09:31.298 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-04-11 17:09:31.300 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI) in 20.552ms
+2024-04-11 17:09:31.301 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-11 17:09:31.302 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7048/ImageText/save-image - 200 0 null 29.3156ms
+2024-04-11 17:09:36.387 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7048/ImageText/save-image - application/json; charset=utf-8 93713
+2024-04-11 17:09:36.390 +03:00 [INF] Executing endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-11 17:09:36.391 +03:00 [INF] Route matched with {action = "UploadImageText", controller = "ImageText"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UploadImageText(FileStorageAPI.Model.ImageData) on controller FileStorageAPI.Controllers.ImageTextController (FileStorageAPI).
+2024-04-11 17:09:36.403 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-04-11 17:09:36.404 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI) in 11.6033ms
+2024-04-11 17:09:36.406 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-11 17:09:36.408 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7048/ImageText/save-image - 200 0 null 20.2744ms
+2024-04-11 17:09:39.301 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7048/ImageText/get-images - null null
+2024-04-11 17:09:39.305 +03:00 [INF] Executing endpoint 'FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI)'
+2024-04-11 17:09:39.308 +03:00 [INF] Route matched with {action = "GetImageText", controller = "ImageText"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetImageText() on controller FileStorageAPI.Controllers.ImageTextController (FileStorageAPI).
+2024-04-11 17:09:39.328 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FileStorageAPI.Model.ImageData, FileStorageAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-11 17:09:39.344 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI) in 33.918ms
+2024-04-11 17:09:39.346 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI)'
+2024-04-11 17:09:39.348 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7048/ImageText/get-images - 200 null application/json; charset=utf-8 46.7994ms
+2024-04-11 17:15:50.401 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7048/ImageText/get-images - null null
+2024-04-11 17:15:50.404 +03:00 [INF] Executing endpoint 'FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI)'
+2024-04-11 17:15:50.406 +03:00 [INF] Route matched with {action = "GetImageText", controller = "ImageText"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetImageText() on controller FileStorageAPI.Controllers.ImageTextController (FileStorageAPI).
+2024-04-11 17:15:50.410 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FileStorageAPI.Model.ImageData, FileStorageAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-11 17:15:50.423 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI) in 14.806ms
+2024-04-11 17:15:50.424 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI)'
+2024-04-11 17:15:50.425 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7048/ImageText/get-images - 200 null application/json; charset=utf-8 24.7985ms
+2024-04-11 17:16:17.878 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7048/ImageText/get-images - null null
+2024-04-11 17:16:17.880 +03:00 [INF] Executing endpoint 'FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI)'
+2024-04-11 17:16:17.881 +03:00 [INF] Route matched with {action = "GetImageText", controller = "ImageText"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetImageText() on controller FileStorageAPI.Controllers.ImageTextController (FileStorageAPI).
+2024-04-11 17:16:17.886 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FileStorageAPI.Model.ImageData, FileStorageAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-11 17:16:17.899 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI) in 17.1313ms
+2024-04-11 17:16:17.902 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI)'
+2024-04-11 17:16:17.904 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7048/ImageText/get-images - 200 null application/json; charset=utf-8 26.1585ms
+2024-04-11 17:16:42.079 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7048/ImageText/save-image - application/json; charset=utf-8 93713
+2024-04-11 17:16:42.087 +03:00 [INF] Executing endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-11 17:16:42.088 +03:00 [INF] Route matched with {action = "UploadImageText", controller = "ImageText"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UploadImageText(FileStorageAPI.Model.ImageData) on controller FileStorageAPI.Controllers.ImageTextController (FileStorageAPI).
+2024-04-11 17:16:42.106 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-04-11 17:16:42.108 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI) in 17.4594ms
+2024-04-11 17:16:42.110 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.UploadImageText (FileStorageAPI)'
+2024-04-11 17:16:42.111 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7048/ImageText/save-image - 200 0 null 32.0824ms
+2024-04-11 17:16:49.558 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7048/ImageText/get-images - null null
+2024-04-11 17:16:49.562 +03:00 [INF] Executing endpoint 'FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI)'
+2024-04-11 17:16:49.564 +03:00 [INF] Route matched with {action = "GetImageText", controller = "ImageText"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetImageText() on controller FileStorageAPI.Controllers.ImageTextController (FileStorageAPI).
+2024-04-11 17:16:49.570 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[FileStorageAPI.Model.ImageData, FileStorageAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-11 17:16:49.578 +03:00 [INF] Executed action FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI) in 11.7327ms
+2024-04-11 17:16:49.579 +03:00 [INF] Executed endpoint 'FileStorageAPI.Controllers.ImageTextController.GetImageText (FileStorageAPI)'
+2024-04-11 17:16:49.581 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7048/ImageText/get-images - 200 null application/json; charset=utf-8 22.2366ms
